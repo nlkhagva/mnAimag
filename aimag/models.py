@@ -7,7 +7,7 @@ class Aimag(models.Model):
     talbai      = models.IntegerField(default=0)
     nyagtarshil = models.FloatField(default=0)
     aimag_tuv   = models.CharField(max_length=50)
-    hursh_aimag = models.ManyToManyField('self', blank=True)
+    hursh_aimag = models.ManyToManyField('self', blank=True , related_name="hurshaimags")
 
     def __str__(self):
         return self.name    

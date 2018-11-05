@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'aimag.apps.AimagConfig',
+    # 'aimag',
     'graphene_django',
     'django.contrib.admin',
     'django.contrib.auth',
